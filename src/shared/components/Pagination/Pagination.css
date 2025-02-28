@@ -1,0 +1,22 @@
+.Pagination__element {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #ededed;
+}
+
+.Pagination {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.Pagination__element:hover {
+    cursor: pointer;
+}
+
+.Pagination__element.active {
+    background-color: aquamarine;
+}

@@ -1,0 +1,56 @@
+.pictureThumbnail__remove {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(89, 50, 234, 0.8); 
+    color: #FFF;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.pictureThumbnail__container {
+    box-sizing: content-box;
+    position: relative;
+    width: 7.5em;
+    height: 7.5em;
+}
+
+.pictureThumbnail {
+    width: 7.5em; 
+    height: 7.5em;
+    border-radius: 12px; 
+    object-fit: cover;
+}
+
+.pictureThumbnail__container:hover .pictureThumbnail__remove {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.pictureThumbnail__p {
+    color: #5932EA;
+    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .pictureThumbnail {
+        width: 5em; 
+        height: 5em;
+    }
+    .pictureThumbnail__container {
+        width: 5em;
+        height: 5em;
+    }
+}

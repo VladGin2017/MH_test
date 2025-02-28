@@ -1,0 +1,92 @@
+.defaultInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid #E1E4ED;
+    border-radius: 8px;
+    padding: 0px 8px;
+    transition: border 0.1s ease-in-out;
+}
+
+.active-input {
+    border: 1px solid #5932EA;
+    transition: border 0.1s ease-in-out;
+}
+
+.defaultInput__input {
+    height: 36px;
+    border-radius: 8px;
+    padding: 0;
+    width: 100%;
+    border: none; 
+    outline: none;
+    color: #232360;
+    background: transparent;
+    background-color: transparent;
+}
+
+.defaultInput__input:-webkit-autofill,
+.defaultInput__input:-webkit-autofill:hover,
+.defaultInput__input:-webkit-autofill:focus,
+.defaultInput__input:-webkit-autofill:active  {
+     box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+
+.defaultInput__input::-webkit-input-placeholder {
+    text-indent: 0px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.defaultInput__input::-moz-placeholder {
+    text-indent: 0px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.defaultInput__input:-moz-placeholder {
+    text-indent: 0px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.defaultInput__input:-ms-input-placeholder {
+    text-indent: 0px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.defaultInput__input:focus::-webkit-input-placeholder {
+    text-indent: -200px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+.defaultInput__input:focus::-moz-placeholder {
+    text-indent: -200px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+.defaultInput__input:focus:-moz-placeholder {
+    text-indent: -200px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+.defaultInput__input:focus:-ms-input-placeholder {
+    text-indent: -200px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+.defaultInput__logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 8px 0px 4px;
+}
+
+@media (max-width: 576px) {
+    .defaultInput {
+        max-width: 319px
+    }
+}

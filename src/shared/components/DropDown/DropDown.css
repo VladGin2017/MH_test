@@ -1,0 +1,111 @@
+.DropDown {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    position: absolute;
+    margin-top: 15px;
+    padding: 16px 0px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px 0px rgba(35, 35, 96, 0.15);
+    z-index: 99;
+    user-select: none;
+}
+
+.DropDown__finder{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 0px 16px 8px 16px;
+    color: #232360;
+    border-bottom: 1px solid #E1E4ED;
+}
+
+.DropDown__option-list::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.DropDown__option-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.DropDown__option-list::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #94A3BD;
+}
+
+.hiddenDropDown {
+    display: none;
+}
+
+.DropDown__option-el__p {
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    color: #232360;
+}
+
+.DropDown__option-list {
+    width: inherit;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.DropDown__option-el {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 16px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.DropDown__option-el__empty {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    font-size: 15px;
+    color: #A4A8B1;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.DropDown__option-el:hover {
+    background-color: rgba(242, 238, 255, 1);
+}
+
+/* 
+.DropDown__option-el:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 26px;
+    background-color: rgba(242, 238, 255, 1);
+}
+
+.DropDown__option-el:hover::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 26px;
+    background-color: rgba(242, 238, 255, 1);
+} */
+

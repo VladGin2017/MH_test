@@ -1,0 +1,7 @@
+.validation-alert {
+    font-size: 14px;
+    color: #F85640;
+    line-height: 1;
+    margin-top: 10px;
+    text-transform: lowercase;
+}
